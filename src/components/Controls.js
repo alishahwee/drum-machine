@@ -18,10 +18,10 @@ export default class Controls extends Component {
   render() {
     const powerStyle = this.props.power
       ? {
-          color: "#3BFF14"
+          color: '#3BFF14',
         }
       : {
-          color: "red"
+          color: 'red',
         };
     return (
       <div className="Controls">

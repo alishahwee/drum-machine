@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 $padWidth: 100px;
 $padHeight: 100px;
 $backgroundImg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8000'/%3E%3Cstop offset='1' stop-color='%23ff8000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300ff19'/%3E%3Cstop offset='1' stop-color='%2300ff19' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239900ff'/%3E%3Cstop offset='1' stop-color='%239900ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffff00'/%3E%3Cstop offset='1' stop-color='%23ffff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF0000'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
@@ -43,7 +43,7 @@ body {
 
 .Logo {
   grid-column: first / end;
-  font-family: "Monoton", cursive;
+  font-family: 'Monoton', cursive;
   font-size: 2.2rem;
   &--rainbow-text {
     background-image: linear-gradient(
@@ -112,7 +112,7 @@ body {
         transform: translateX(-26px);
       }
       &:checked + .Controls2__switch__slider:after {
-        content: "II";
+        content: 'II';
         left: 75%;
       }
     }
@@ -126,7 +126,7 @@ body {
       background-color: #ccc;
       &:before {
         position: absolute;
-        content: "";
+        content: '';
         height: 26px;
         width: 26px;
         left: 30px;
@@ -134,7 +134,7 @@ body {
         background-color: white;
       }
       &:after {
-        content: "I";
+        content: 'I';
         color: black;
         font-weight: bold;
         position: absolute;
@@ -152,7 +152,7 @@ body {
     color: black;
     width: 200px;
     height: 34px;
-    font-family: "VT323", monospace;
+    font-family: 'VT323', monospace;
     font-weight: bold;
     font-size: 1.8rem;
     display: grid;
@@ -195,7 +195,7 @@ $track-height: 8.4px;
 $track-background: #cccccc;
 $track-background-focus: #cccccc;
 
-input[type="range"] {
+input[type='range'] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: $track-width;
@@ -203,10 +203,10 @@ input[type="range"] {
   position: relative;
   bottom: 90px;
 }
-input[type="range"]:focus {
+input[type='range']:focus {
   outline: none;
 }
-input[type="range"]::-webkit-slider-runnable-track {
+input[type='range']::-webkit-slider-runnable-track {
   width: $track-width;
   height: $track-height;
   cursor: pointer;
@@ -215,7 +215,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: $thumb-height;
@@ -226,10 +226,10 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -14px;
 }
-input[type="range"]:focus::-webkit-slider-runnable-track {
+input[type='range']:focus::-webkit-slider-runnable-track {
   background: $track-background-focus;
 }
-input[type="range"]::-moz-range-track {
+input[type='range']::-moz-range-track {
   width: $track-width;
   height: $track-height;
   cursor: pointer;
@@ -238,7 +238,7 @@ input[type="range"]::-moz-range-track {
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
-input[type="range"]::-moz-range-thumb {
+input[type='range']::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: $thumb-height;
@@ -247,7 +247,7 @@ input[type="range"]::-moz-range-thumb {
   background: $thumb-background;
   cursor: pointer;
 }
-input[type="range"]::-ms-track {
+input[type='range']::-ms-track {
   width: $track-width;
   height: $track-height;
   cursor: pointer;
@@ -256,19 +256,19 @@ input[type="range"]::-ms-track {
   border-width: 16px 0;
   color: transparent;
 }
-input[type="range"]::-ms-fill-lower {
+input[type='range']::-ms-fill-lower {
   background: #2a6495;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
-input[type="range"]::-ms-fill-upper {
+input[type='range']::-ms-fill-upper {
   background: $track-background;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
-input[type="range"]::-ms-thumb {
+input[type='range']::-ms-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: $thumb-height;
@@ -277,9 +277,9 @@ input[type="range"]::-ms-thumb {
   background: $thumb-background;
   cursor: pointer;
 }
-input[type="range"]:focus::-ms-fill-lower {
+input[type='range']:focus::-ms-fill-lower {
   background: $track-background;
 }
-input[type="range"]:focus::-ms-fill-upper {
+input[type='range']:focus::-ms-fill-upper {
   background: $track-background-focus;
 }

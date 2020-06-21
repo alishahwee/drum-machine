@@ -11,10 +11,10 @@ class App extends Component {
     super(props);
     this.state = {
       power: true,
-      display: "",
+      display: '',
       currentBankPad: bankOne,
       volume: 50,
-      borderColor: "black"
+      borderColor: 'black',
     };
     this.handlePowerChange = this.handlePowerChange.bind(this);
     this.handleDisplayChange = this.handleDisplayChange.bind(this);
@@ -31,7 +31,7 @@ class App extends Component {
     if (this.state.power) {
       this.setState({ display: id });
       setTimeout(() => {
-        this.setState({ display: "" });
+        this.setState({ display: '' });
       }, 1500);
     }
   }
@@ -54,7 +54,7 @@ class App extends Component {
     if (this.state.power) {
       this.setState({ borderColor: color });
       setTimeout(() => {
-        this.setState({ borderColor: "black" });
+        this.setState({ borderColor: 'black' });
       }, 800);
     }
   }

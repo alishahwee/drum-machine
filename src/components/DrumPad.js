@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 export default class DrumPad extends Component {
   constructor(props) {
@@ -9,10 +9,10 @@ export default class DrumPad extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener("keydown", this.handleKeyPress);
+    document.addEventListener('keydown', this.handleKeyPress);
   }
   componentWillUnmount() {
-    document.removeEventListener("keydown", this.handleKeyPress);
+    document.removeEventListener('keydown', this.handleKeyPress);
   }
 
   playAudio() {
@@ -35,11 +35,11 @@ export default class DrumPad extends Component {
   changeColor() {
     const currentDrum = document.getElementById(this.props.clipId);
     currentDrum.style.background = this.props.clipColor;
-    currentDrum.style.boxShadow = "inset 1px 1px 1px #000000";
+    currentDrum.style.boxShadow = 'inset 1px 1px 1px #000000';
     setTimeout(() => {
-      currentDrum.style.background = "white";
+      currentDrum.style.background = 'white';
       currentDrum.style.boxShadow =
-        "inset 0 -0.5em 0 -0.35em rgba(0, 0, 0, 0.17)";
+        'inset 0 -0.5em 0 -0.35em rgba(0, 0, 0, 0.17)';
     }, 800);
   }
 
